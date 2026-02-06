@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>CV – Sakeena Syed Naqvi</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+
+/* -------- BASE -------- */
+body{
+  font-family: 'Poppins', sans-serif;
+  margin:0;
+  background:#f3f0fb;
+  color:#2b1f3a;
+}
+
+/* -------- HEADER -------- */
+#header{
+  background:#a78bdb;
+  color:white;
+  padding:30px;
+  text-align:center;
+}
+
+#header h1{
+  margin:0;
+  font-weight:600;
+  font-size:32px;
+}
+
+#header h2{
+  margin-top:8px;
+  font-weight:300;
+  font-size:18px;
+}
+
+/* -------- MAIN CARD -------- */
+#main{
+  width:900px;
+  max-width:90%;
+  margin:40px auto;
+  background:white;
+  border-radius:15px;
+  box-shadow:0 8px 30px rgba(0,0,0,0.1);
+  padding:40px;
+  text-align:center;
+}
+
+/* photo */
+.profile_picture{
+  width:140px;
+  height:140px;
+  border-radius:50%;
+  object-fit:cover;
+  border:4px solid #d8ccf2;
+  margin-bottom:20px;
+}
+
+/* contact */
+.contact{
+  margin-top:20px;
+  line-height:1.8em;
+}
+
+/* -------- BUTTONS -------- */
+.menu_buttons{
+  margin-top:30px;
+}
+
+.menu_buttons button{
+  background:#7b5fbf;
+  color:white;
+  border:none;
+  padding:12px 20px;
+  margin:8px;
+  font-size:15px;
+  border-radius:10px;
+  cursor:pointer;
+  transition:0.25s;
+}
+
+.menu_buttons button:hover{
+  background:#5c43a5;
+  transform:scale(1.05);
+}
+
+/* -------- POPUP -------- */
+.popup{
+  display:none;
+  position:fixed;
+  z-index:999;
+  left:0;
+  top:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.45);
+}
+
+.popup_content{
+  background:white;
+  width:65%;
+  max-width:750px;
+  margin:6% auto;
+  padding:35px;
+  border-radius:14px;
+  position:relative;
+  animation:appear .3s ease;
+  text-align:left;
+}
+
+.popup h2{
+  margin-top:0;
+  color:#7b5fbf;
+}
+
+.popup h3{
+  margin-bottom:5px;
+}
+
+.popup ul{
+  padding-left:20px;
+}
+
+.close{
+  position:absolute;
+  right:18px;
+  top:12px;
+  font-size:28px;
+  cursor:pointer;
+}
+
+@keyframes appear{
+  from{opacity:0; transform:scale(.8);}
+  to{opacity:1; transform:scale(1);}
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<div id="header">
+  <h1>Sakeena Syed Naqvi</h1>
+  <h2>Digital Communication & Event Project Assistant</h2>
+</div>
+
+<!-- MAIN PRESENTATION -->
+<div id="main">
+
+  <img src="photo.jpg" class="profile_picture">
+
+  <p>
+    I am a motivated student in Digital Humanities with a strong interest in communication,
+    digital projects, and event management. I am seeking an internship starting in
+    <strong>April 2026</strong> to develop my professional skills in digital communication and project coordination.
+  </p>
+
+  <div class="contact">
+    📍 Paris, France<br>
+    📞 +33 6 68 46 45 77<br>
+    ✉️ syedsakeena.2001@gmail.com<br>
+    🚗 Driving License B
+  </div>
+
+  <!-- BUTTONS -->
+  <div class="menu_buttons">
+    <button onclick="openWindow('experience')">Professional Experience</button>
+    <button onclick="openWindow('education')">Education</button>
+    <button onclick="openWindow('skills')">Skills</button>
+    <button onclick="openWindow('languages')">Languages</button>
+    <button onclick="openWindow('interests')">Interests</button>
+  </div>
+
+</div>
+
+<!-- EXPERIENCE WINDOW -->
+<div id="experience" class="popup">
+  <div class="popup_content">
+    <span class="close" onclick="closeWindow('experience')">&times;</span>
+    <h2>Professional Experience</h2>
+
+    <h3>Event Project Assistant – J.D.M</h3>
+    <p>Jul 2024 – Oct 2024 | Saint-Genis-Pouilly</p>
+    <ul>
+      <li>Coordinated event planning and logistics</li>
+      <li>Instagram communication strategy</li>
+      <li>Prepared impact and analysis reports</li>
+    </ul>
+
+    <h3>Event Project Assistant (Internship) – J.D.M</h3>
+    <p>Feb 2024 – Jun 2024</p>
+    <ul>
+      <li>Supported organization of professional events</li>
+      <li>Communication materials and scheduling</li>
+    </ul>
+
+    <h3>Independent Event Organizer – Freelance</h3>
+    <p>Paris | 2023-2024</p>
+    <ul>
+      <li>Private events (weddings & birthdays)</li>
+      <li>Supplier coordination</li>
+      <li>Client management</li>
+    </ul>
+
+    <h3>Legal Project Intern – Privanova</h3>
+    <p>Paris | Sep 2023 – Nov 2023</p>
+    <ul>
+      <li>Privacy and ethics research</li>
+      <li>Project coordination support</li>
+    </ul>
+  </div>
+</div>
+
+<!-- EDUCATION -->
+<div id="education" class="popup">
+  <div class="popup_content">
+    <span class="close" onclick="closeWindow('education')">&times;</span>
+    <h2>Education</h2>
+
+    <p><strong>Master’s in Digital Humanities</strong><br>
+    Université Paris 8 — 2025-2027 (in progress)</p>
+
+    <p><strong>Bachelor’s Humanities & Social Sciences</strong><br>
+    Université Paris Cité — 2020-2024</p>
+
+    <p><strong>PSC1 First Aid Certificate</strong> — 2019</p>
+  </div>
+</div>
+
+<!-- SKILLS -->
+<div id="skills" class="popup">
+  <div class="popup_content">
+    <span class="close" onclick="closeWindow('skills')">&times;</span>
+    <h2>Skills</h2>
+
+    <h3>Hard Skills</h3>
+    <ul>
+      <li>Event planning & organization</li>
+      <li>Social media communication</li>
+      <li>Quantitative & qualitative analysis</li>
+      <li>Market research</li>
+    </ul>
+
+    <h3>Digital Skills</h3>
+    <ul>
+      <li>Canva</li>
+      <li>Adobe Photoshop & Illustrator</li>
+      <li>Social media management</li>
+      <li>Modalisa</li>
+    </ul>
+
+    <h3>Soft Skills</h3>
+    <ul>
+      <li>Teamwork</li>
+      <li>Adaptability</li>
+      <li>Organization</li>
+      <li>Reliability</li>
+    </ul>
+  </div>
+</div>
+
+<!-- LANGUAGES -->
+<div id="languages" class="popup">
+  <div class="popup_content">
+    <span class="close" onclick="closeWindow('languages')">&times;</span>
+    <h2>Languages</h2>
+
+    <ul>
+      <li>French — C1 (Professional)</li>
+      <li>English — B1</li>
+      <li>Spanish — B1</li>
+      <li>Urdu — C2 (Native)</li>
+      <li>Hindi — C1</li>
+      <li>Punjabi — C1</li>
+    </ul>
+  </div>
+</div>
+
+<!-- INTERESTS -->
+<div id="interests" class="popup">
+  <div class="popup_content">
+    <span class="close" onclick="closeWindow('interests')">&times;</span>
+    <h2>Interests</h2>
+
+    <ul>
+      <li>Photography & photo editing</li>
+      <li>Travel & cultural exploration</li>
+      <li>Volunteering & humanitarian aid</li>
+    </ul>
+  </div>
+</div>
+
+<script>
+function openWindow(id){
+  document.getElementById(id).style.display="block";
+}
+
+function closeWindow(id){
+  document.getElementById(id).style.display="none";
+}
+
+window.onclick=function(event){
+  let popups=document.getElementsByClassName("popup");
+  for(let i=0;i<popups.length;i++){
+    if(event.target==popups[i]){
+      popups[i].style.display="none";
+    }
+  }
+}
+</script>
+
+</body>
+</html>
