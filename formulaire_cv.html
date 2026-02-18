@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Formulaire CV</title>
+
+<style>
+body{
+    font-family: Arial;
+    background:#f3f0fb;
+    padding:40px;
+}
+
+form{
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    max-width:800px;
+    margin:auto;
+}
+
+h1{
+    text-align:center;
+    color:#7b5fbf;
+}
+
+h2{
+    color:#5c43a5;
+    margin-top:30px;
+}
+
+input, textarea, select{
+    width:100%;
+    padding:8px;
+    margin-top:5px;
+    margin-bottom:15px;
+    border-radius:6px;
+    border:1px solid #ccc;
+}
+
+.submit_btn{
+    background:#7b5fbf;
+    color:white;
+    border:none;
+    padding:12px;
+    font-size:16px;
+    cursor:pointer;
+}
+
+.submit_btn:hover{
+    background:#5c43a5;
+}
+</style>
+</head>
+
+<body>
+
+<form>
+
+<h1>Créer votre CV</h1>
+
+<h2>Informations personnelles</h2>
+
+Nom :
+<input type="text" name="nom" required>
+
+Prénom :
+<input type="text" name="prenom" required>
+
+Titre professionnel :
+<input type="text" name="titre" placeholder="Ex: Digital Communication Assistant">
+
+Photo :
+<input type="file" name="photo">
+
+Description / Profil :
+<textarea name="profil" rows="5"></textarea>
+
+<h2>Contact</h2>
+
+Ville :
+<input type="text" name="ville">
+
+Téléphone :
+<input type="tel" name="telephone">
+
+Email :
+<input type="email" name="email">
+
+Permis de conduire :
+<select name="permis">
+<option value="oui">Oui</option>
+<option value="non">Non</option>
+</select>
+
+<h2>Expérience professionnelle</h2>
+
+Entreprise :
+<input type="text" name="entreprise">
+
+Poste :
+<input type="text" name="poste">
+
+Période :
+<input type="text" name="periode">
+
+Description des missions :
+<textarea name="missions" rows="5"></textarea>
+
+<h2>Formation</h2>
+
+Diplôme :
+<input type="text" name="diplome">
+
+Établissement :
+<input type="text" name="ecole">
+
+Année :
+<input type="text" name="annee">
+
+<h2>Compétences</h2>
+
+<input type="checkbox" name="competences" value="Event planning"> Event planning<br>
+<input type="checkbox" name="competences" value="Communication"> Communication<br>
+<input type="checkbox" name="competences" value="Social media"> Social media<br>
+<input type="checkbox" name="competences" value="Photoshop"> Photoshop<br>
+<input type="checkbox" name="competences" value="Illustrator"> Illustrator<br>
+
+<h2>Langues</h2>
+
+<textarea name="langues" placeholder="Ex: French C2, English B2..." rows="4"></textarea>
+
+<h2>Centres d'intérêt</h2>
+
+<textarea name="interets" rows="4"></textarea>
+
+<br>
+<input type="submit" value="Envoyer le CV" class="submit_btn">
+
+</form>
+
+</body>
+</html>
